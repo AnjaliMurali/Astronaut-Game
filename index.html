@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="game.js"> </script>
+    <script src="movement.js"></script>
+  </head>
+
+  <body>
+    <a-scene physics="gravity: 0">
+
+      <a-entity id="look" kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20"
+        rotation="-6 -0.5 0">
+        <a-entity position="-5 -5 -12">
+          <a-entity position="-0.6 0.13 0"
+            text="align:left;width: 12; color: white; value: TARGETS\nREMAINING"></a-entity>
+          <a-entity id="orbsRemainingText" position="-8 0.3 0"
+            text="align: center; width: 30; color: white; value: 5"></a-entity>
+          <a-entity id="gameOverText" position="15 0.3 0" text="align: center; width: 30; color: white;">
+          </a-entity>
+        </a-entity>
+      </a-entity>
+
+      <a-assets>
+        <img id="space" src="assets/space.jpeg">
+        <a-asset-item id="environment" src="assets/scifi_corridor/scene.gltf"></a-asset-item>
+        <a-asset-item id="astro" src="assets/floating_astronaut/scene.gltf"></a-asset-item>
+        <a-asset-item id="orb" src="assets/orb_in_space/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-sky src="#space" rotation="-180 10 0"></a-sky>
+
+      <a-entity gltf-model="#environment" position="-10 -25 -12" scale="3 3 3">
+      </a-entity>
+
+      <a-entity id="astronaut" static-body="shape: sphere; sphereRadius: 6" game-play gltf-model="#astro"
+        rotation="0 180 0" scale="3 3 3" animation-mixer="clip: Animation" movement>
+      </a-entity>
+
+      <a-entity id="orb1" gltf-model="#orb" game-play static-body="shape: sphere; sphereRadius: 5" position="-44 -17 -86"
+        scale="3 3 3" animation-mixer="clip: Animation">
+      </a-entity>
+
+      <a-entity id="orb2" gltf-model="#orb" game-play static-body="shape: sphere; sphereRadius: 5" position="27 -17 -45"
+        scale="3 3 3" animation-mixer="clip: Animation">
+      </a-entity>
+
+      <a-entity id="orb3" gltf-model="#orb" game-play static-body="shape: sphere; sphereRadius: 5"
+        position="-160 -17 -264" scale="3 3 3" animation-mixer="clip: Animation">
+      </a-entity>
+
+      <a-entity id="orb4" gltf-model="#orb" game-play static-body="shape: sphere; sphereRadius: 5" position="77 -17 -450"
+        scale="3 3 3" animation-mixer="clip: Animation">
+      </a-entity>
+
+      <a-entity id="orb5" gltf-model="#orb" game-play static-body="shape: sphere; sphereRadius: 5" position="212 -17 -403"
+        scale="3 3 3" animation-mixer="clip: Animation">
+      </a-entity>
+
+    </a-scene>
+  </body>
+
+</html>

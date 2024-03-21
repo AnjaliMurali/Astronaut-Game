@@ -1,0 +1,11 @@
+Model Information:
+* title:	Scifi Corridor Modular Set
+* source:	https://sketchfab.com/3d-models/scifi-corridor-modular-set-ef5fa0d7033a426c96cf308a5b83da61
+* author:	DennisGray (https://sketchfab.com/DennisGray)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Scifi Corridor Modular Set" (https://sketchfab.com/3d-models/scifi-corridor-modular-set-ef5fa0d7033a426c96cf308a5b83da61) by DennisGray (https://sketchfab.com/DennisGray) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
